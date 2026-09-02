@@ -1,224 +1,199 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dan Constructor</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> -->
-  <link rel="icon" type="image/png" href="images/logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEVATE | Architecture & Construction Haut de Gamme</title>
+    <!-- Polices 2026 : Outfit (Titres) et Inter (Texte) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <!-- Icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">
-      <img src="images/logo.jpg" alt="logo">
-      <!-- <span>Dan Constructor</span> -->
-    </div>
-    <ul class="onglets">
-      <li><a href="index.html">ACCUEIL</a></li>
-      <li><a href="about.html"">À PROPOS</a></li>
-      <li><a href="projet.html">PROJETS</a></li>
-      <li><a href="service.html">SERVICES</a></li>
-      <li class="spo"><a href="contact.html">CONTACTEZ-NOUS</a></li> 
-    </ul>
-    <img src="images/menu2.png" alt="boutton menu" class="menu-humberger">
-  </nav>
 
-  <!-- Header -->
-  <header>
-    <div class="slides">
-      <img src="images/Construction site  _ Premium Photo.jpeg" class="active">
-      <img src="images/Construction site stock photo_ Image of crane, cement - 2974036.jpeg">
-      <img src="images/jskks.jpeg">
-      <img src="images/Under Construction Site 3 stock image_ Image of mall - 14413497.jpeg" alt="batiments">
+    <!-- NAVIGATION FLOTTANTE -->
+    <header id="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="logo">ELEVATE<span>.</span></a>
+            <i class="fas fa-grip-lines menu-toggle" id="mobile-menu"></i>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#a-propos">Expertise</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#realisations">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="accueil">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <p class="subtitle">Façonner l'avenir urbain.</p>
+            <h1>L'Art de <br><span>Bâtir Grand.</span></h1>
+            <a href="#realisations" class="btn">Explorer nos projets <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- BANDE DÉFILANTE INFINIE (MARQUEE) -->
+    <div class="marquee-wrapper">
+        <div class="marquee">
+            <span>INNOVATION ARCHITECTURALE •</span>
+            <span>RIGOUREUX •</span>
+            <span>DURABLE •</span>
+            <span>DESIGN SUR MESURE •</span>
+            <span>INNOVATION ARCHITECTURALE •</span>
+            <span>RIGOUREUX •</span>
+            <span>DURABLE •</span>
+            <span>DESIGN SUR MESURE •</span>
+        </div>
     </div>
 
-    <div class="header-content">
-      <h1>Bâtissons vos rêves</h1>
-      <p>Depuis plus de 5 ans, Dan Constructor est votre partenaire de confiance en construction et rénovation.  
-        Expertise, qualité et respect des délais pour donner vie à vos projets.</p>
-      <a href="contact.html" class="btn">Débuttez avec nous </a>
-    </div>
-  </header>
-    <!-- Section À propos -->
-  <section class="about" id="about">
-    <div class="about-container">
-      <div class="about-content">
-        <h2>À propos de Dan Service</h2>
-        <p>Fondée en 2018, Dan Constructor s'est rapidement imposée comme une référence dans le domaine de la construction et de la rénovation. Notre entreprise familiale allie savoir-faire traditionnel et innovations techniques pour répondre aux exigences de nos clients les plus prestigieux.</p>
-        <p>Notre équipe de professionnels expérimentés met tout en œuvre pour transformer vos visions en réalité, en respectant les plus hauts standards de qualité, les délais convenus et votre budget.</p>
-        <p>Que ce soit pour une construction neuve, une rénovation complète ou des travaux d'aménagement, nous nous engageons à vous offrir un service personnalisé et des résultats exceptionnels qui dépasseront vos attentes.</p>
-        <a href="about.html" class="btn">En savoir plus</a>
-      </div>
-      <div class="about-image">
-        <img src="images/équipe black ingé.jpeg" alt="Équipe Dan Constructor">
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Projets -->
-  <section class="projects" id="projects">
-    <div class="section-title">
-      <h2>Nos Projets Réalisés</h2>
-      <p>Découvrez quelques-unes de nos réalisations qui témoignent de notre expertise et de notre engagement envers l'excellence.</p>
-    </div>
-    <div class="projects-grid">
-      <div class="project-item">
-        <img src="images/résidenciel.jpeg" alt="Projet Résidentiel">
-        <div class="project-overlay">
-          <h3>Résidence Les Oliviers</h3>
-          <p>Construction neuve de 12 appartements</p>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="images/mall.jpeg" alt="Projet Commercial">
-        <div class="project-overlay">
-          <h3>Centre Commercial Horizon</h3>
-          <p>Rénovation complète des espaces</p>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="images/entrepot.jpeg" alt="Projet Industriel">
-        <div class="project-overlay">
-          <h3>Entrepôt Logistique</h3>
-          <p>Construction d'un entrepôt de 5000m²</p>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="images/villa.jpeg" alt="Projet Rénovation">
-        <div class="project-overlay">
-          <h3>Villa Moderne</h3>
-          <p>Rénovation et extension complète</p>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="images/siège.jpeg" alt="Projet Bureau">
-        <div class="project-overlay">
-          <h3>Siège Social Enterprise</h3>
-          <p>Aménagement intérieur sur mesure</p>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="images/école.jpeg" alt="Projet Public">
-        <div class="project-overlay">
-          <h3>École Primaire</h3>
-          <p>Construction d'un établissement scolaire</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Services -->
-  <section class="services" id="services">
-    <div class="section-title">
-      <h2>Nos Services</h2>
-      <p>Une gamme complète de services pour répondre à tous vos besoins en construction et rénovation.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-box">
-        <div class="service-image">
-          <img src="images/résidenciel.jpeg" alt="Construction Neuve">
-        </div>
-        <div class="service-content">
-          <h3>Construction Neuve</h3>
-          <p>De la conception à la réalisation, nous construisons votre projet selon vos spécifications et dans le respect des normes.</p>
-          <a href="service.html" class="btn">Découvrir</a>
-        </div>
-      </div>
-      <div class="service-box">
-        <div class="service-image">
-          <img src="images/villa.jpeg" alt="Rénovation">
-        </div>
-        <div class="service-content">
-          <h3>Rénovation</h3>
-          <p>Redonnez vie à votre espace avec nos services de rénovation complète ou partielle, alliant tradition et modernité.</p>
-          <a href="service.html" class="btn">Découvrir</a>
-        </div>
-      </div>
-      <div class="service-box">
-        <div class="service-image">
-          <img src="images/siège.jpeg" alt="Aménagement Intérieur">
-        </div>
-        <div class="service-content">
-          <h3>Aménagement Intérieur</h3>
-          <p>Créez des espaces fonctionnels et esthétiques avec nos solutions d'aménagement sur mesure adaptées à vos besoins.</p>
-          <a href="service.html" class="btn">Découvrir</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Contact -->
-  <section class="contact" id="contact">
-    <div class="contact-container">
-      <div class="contact-info">
-        <h2>Discutons de votre projet</h2>
-        <p>Notre équipe est à votre écoute pour étudier la faisabilité de votre projet et vous proposer des solutions adaptées.</p>
-        <div class="contact-details">
-          <p><img src="images/icons8-apple-mail-50.png" alt="">contact@danconstructor.com</p>
-          <p><img src="images/icons8-téléphone-50.png" alt=""> +33 1 23 45 67 89</p>
-          <p><img src="images/icons8-adresse-30.png" alt="">123 Avenue de la Construction, 75000 Paris</p>
-        </div>
-        <div class="social-icons">
-          <a href="#"><img src="images/icons8-instagram-50.png" alt=""></a>
-          <a href="#"><img src="images/icons8-facebook-nouveau-50.png" alt=""></i></a>
-          <a href="#"><img src="images/icons8-linkedin-50.png" alt=""></a>
-          <a href="#"><img src="images/icons8-x-50.png" alt=""></a>
-        </div>
-      </div>
-      <div class="contact-image">
-        <img src="images/secrétaire.jpeg" alt="Notre équipe">
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-   <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="images/logo.jpg" alt="Logo Dan Constructor">
-                <p>Dan Constructor - Bâtissons ensemble l'avenir avec expertise et passion depuis 2018.</p>
-            </div>
-            <div class="footer-links">
-                <div class="footer-box"> 
-                  <div class="boxi">
-                    <h3>Liens Rapides</h3>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="projet.html">Projets</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="contact.html">Contactez-nous</a></li>
-                    </ul>
-                  </div> 
-
-                   <div class="boxi">
-                     <h3>Nos services</h3>
-                    <ul>
-                        <li><a href="service.html">Construction Neuve</a></li>
-                        <li><a href="service.html">Rénovation</a></li>
-                        <li><a href="service.html">Aménagement Intérieur</a></li>
-                        <li><a href="service.html">Aménagement Intérieur</a></li>
-                    </ul>
-                  </div>  
-                    <div class="boxi">
-                        <h3>Contact</h3>
-                        <div class="contact-details">
-                            <p><img src="images/icons8-apple-mail-50.png" alt="">contact@danconstructor.com</p>
-                            <p><img src="images/icons8-téléphone-50.png" alt=""> +33 1 23 45 67 89</p>
-                             <p><img src="images/icons8-adresse-30.png" alt="">123 Avenue de la Construction, 75000 Paris</p>
-                        </div>
-                     </div>
-                 
+    <!-- À PROPOS -->
+    <section id="a-propos" class="container">
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <h2 class="section-title">Redéfinir <br>les Standards.</h2>
+                <p>Nous ne construisons pas de simples bâtiments. Nous érigeons des héritages. Depuis plus de 20 ans, ELEVATE combine ingénierie de précision et esthétique contemporaine pour créer des espaces grandioses.</p>
+                <p>Notre engagement pour 2026 : 100% de nos nouveaux projets intègrent des matériaux à faible empreinte carbone sans compromettre le luxe et la solidité.</p>
+                <div class="signature">
+                    <!-- Signature factice en blanc -->
+                    <h3 style="font-family: 'Outfit', sans-serif; font-size: 2rem; color: #d4af37; margin-bottom: 5px;">Jean Dupont</h3>
+                    <p style="font-size: 0.9rem; color: #a0a0a0;">Directeur Général</p>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Dan Constructor. Tous droits réservés.</p>
+            <div class="about-image reveal delay-1">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop" alt="Bâtiment moderne">
             </div>
+        </div>
+    </section>
+
+    <!-- STATISTIQUES -->
+    <section id="stats">
+        <div class="container stats-grid">
+            <div class="stat-item reveal">
+                <h3 class="counter" data-target="250">0</h3>
+                <p>Projets Livrés</p>
+            </div>
+            <div class="stat-item reveal delay-1">
+                <h3 class="counter" data-target="45">0</h3>
+                <p>Awards d'Architecture</p>
+            </div>
+            <div class="stat-item reveal delay-2">
+                <h3 class="counter" data-target="15">0</h3>
+                <p>Pays d'Intervention</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="container">
+        <h2 class="section-title text-center reveal">Nos Domaines d'Excellence</h2>
+        <div class="services-wrapper">
+            <div class="service-box reveal">
+                <div class="service-number">01</div>
+                <h3>Génie Civil & Commercial</h3>
+                <p>Sièges sociaux ultra-modernes, complexes hôteliers et centres d'affaires conçus pour maximiser la productivité et l'esthétique.</p>
+            </div>
+            <div class="service-box reveal delay-1">
+                <div class="service-number">02</div>
+                <h3>Résidentiel Privé</h3>
+                <p>Villas d'architecte et résidences de très haut standing. Une attention obsessionnelle portée aux finitions et aux volumes.</p>
+            </div>
+            <div class="service-box reveal delay-2">
+                <div class="service-number">03</div>
+                <h3>Rénovation & Patrimoine</h3>
+                <p>Sublimer l'ancien par le moderne. Restructuration de bâtiments historiques avec intégration de domotique de pointe.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RÉALISATIONS (BENTO GRID) -->
+    <section id="realisations" class="container">
+        <h2 class="section-title reveal">Sélection d'Œuvres</h2>
+        <div class="bento-grid">
+            <div class="bento-item large reveal">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop" alt="Villa Modulaire">
+                <div class="bento-content">
+                    <h3>Villa Modulaire</h3>
+                    <p>Côte d'Azur</p>
+                </div>
+            </div>
+            <div class="bento-item reveal delay-1">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop" alt="Tour Nexus">
+                <div class="bento-content">
+                    <h3>Tour Nexus</h3>
+                    <p>Paris, La Défense</p>
+                </div>
+            </div>
+            <div class="bento-item reveal delay-2">
+                <img src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=800&auto=format&fit=crop" alt="Musée d'Art">
+                <div class="bento-content">
+                    <h3>Galerie Lumière</h3>
+                    <p>Genève</p>
+                </div>
+            </div>
+            <div class="bento-item wide reveal">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" alt="Intérieur Bureau">
+                <div class="bento-content">
+                    <h3>Siège Horizon</h3>
+                    <p>Espace corporate 3.0</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT (GRILLE ÉPURÉE) -->
+    <section id="contact" class="container">
+        <div class="contact-header reveal">
+            <h2 class="section-title text-center">Prêt à bâtir l'exceptionnel ?</h2>
+            <p style="text-align: center; margin-bottom: 40px; color: #a0a0a0;">Notre équipe d'ingénieurs et d'architectes est à votre écoute pour concevoir votre futur.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card reveal">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Bureaux</h3>
+                <p>8 Avenue Montaigne<br>75008 Paris, France</p>
+            </div>
+            <div class="contact-card reveal delay-1">
+                <i class="fas fa-phone"></i>
+                <h3>Appelez-nous</h3>
+                <p>Lun - Ven | 9h00 - 19h00</p>
+                <a href="tel:+33180000000" class="contact-link">+33 1 80 00 00 00</a>
+            </div>
+            <div class="contact-card reveal delay-2">
+                <i class="fas fa-envelope"></i>
+                <h3>Écrivez-nous</h3>
+                <p>Réponse garantie sous 24h</p>
+                <a href="mailto:contact@elevate.fr" class="contact-link">studio@elevate.fr</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>ELEVATE<span>.</span></h2>
+                <p>Construire demain.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ELEVATE Construction. Tous droits réservés.</p>
         </div>
     </footer>
 
-  <script src="scrypte.js"></script>
+    <!-- JS -->
+    <script src="scripte.js"></script>
 </body>
 </html>
