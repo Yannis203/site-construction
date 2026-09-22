@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELEVATE | Architecture & Construction Haut de Gamme</title>
-    <!-- Polices 2026 : Outfit (Titres) et Inter (Texte) -->
+    <title>DAN SERVICES | Construction & Bâtiment aux normes</title>
+    <meta name="description" content="DAN SERVICES - Spécialisé dans la construction : maçonnerie, charpenterie, plomberie, ferraillage, coulage bétons et dalles.">
+
+    <!-- Polices -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+
     <!-- Icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,8 +20,10 @@
     <!-- NAVIGATION FLOTTANTE -->
     <header id="navbar">
         <div class="nav-container">
-            <a href="#accueil" class="logo">ELEVATE<span>.</span></a>
-            <i class="fas fa-grip-lines menu-toggle" id="mobile-menu"></i>
+            <a href="#accueil" class="logo-link">
+                <img src="images/logo.jpg" alt="Logo DAN SERVICES">
+            </a>
+            <button class="fas fa-grip-lines menu-toggle" id="mobile-menu" type="button" aria-label="Ouvrir le menu" aria-expanded="false"></button>
             <nav>
                 <ul id="nav-links">
                     <li><a href="#accueil">Accueil</a></li>
@@ -34,23 +40,25 @@
     <section id="accueil">
         <div class="hero-overlay"></div>
         <div class="hero-content reveal">
-            <p class="subtitle">Façonner l'avenir urbain.</p>
-            <h1>L'Art de <br><span>Bâtir Grand.</span></h1>
-            <a href="#realisations" class="btn">Explorer nos projets <i class="fas fa-arrow-right"></i></a>
+            <p class="subtitle">Dan Services - Le service qui répond aux normes.</p>
+            <h1>Bâtir <br><span>Solide & Durable.</span></h1>
+            <a href="#realisations" class="btn">Voir nos réalisations <i class="fas fa-arrow-right"></i></a>
         </div>
     </section>
 
     <!-- BANDE DÉFILANTE INFINIE (MARQUEE) -->
     <div class="marquee-wrapper">
         <div class="marquee">
-            <span>INNOVATION ARCHITECTURALE •</span>
-            <span>RIGOUREUX •</span>
-            <span>DURABLE •</span>
-            <span>DESIGN SUR MESURE •</span>
-            <span>INNOVATION ARCHITECTURALE •</span>
-            <span>RIGOUREUX •</span>
-            <span>DURABLE •</span>
-            <span>DESIGN SUR MESURE •</span>
+            <span>MAÇONNERIE •</span>
+            <span>CHARPENTERIE •</span>
+            <span>PLOMBERIE •</span>
+            <span>FERRAILLAGE •</span>
+            <span>COULAGE BÉTONS & DALLES •</span>
+            <span>MAÇONNERIE •</span>
+            <span>CHARPENTERIE •</span>
+            <span>PLOMBERIE •</span>
+            <span>FERRAILLAGE •</span>
+            <span>COULAGE BÉTONS & DALLES •</span>
         </div>
     </div>
 
@@ -58,17 +66,13 @@
     <section id="a-propos" class="container">
         <div class="about-grid">
             <div class="about-text reveal">
-                <h2 class="section-title">Redéfinir <br>les Standards.</h2>
-                <p>Nous ne construisons pas de simples bâtiments. Nous érigeons des héritages. Depuis plus de 20 ans, ELEVATE combine ingénierie de précision et esthétique contemporaine pour créer des espaces grandioses.</p>
-                <p>Notre engagement pour 2026 : 100% de nos nouveaux projets intègrent des matériaux à faible empreinte carbone sans compromettre le luxe et la solidité.</p>
-                <div class="signature">
-                    <!-- Signature factice en blanc -->
-                    <h3 style="font-family: 'Outfit', sans-serif; font-size: 2rem; color: #d4af37; margin-bottom: 5px;">Jean Dupont</h3>
-                    <p style="font-size: 0.9rem; color: #a0a0a0;">Directeur Général</p>
-                </div>
+                <h2 class="section-title">DAN SERVICES,<br>l'expertise du terrain.</h2>
+                <p>DAN SERVICES est spécialisé dans la construction et la réalisation de vos projets de bâtiment. De la maçonnerie à la plomberie, en passant par la charpenterie et le ferraillage, nous intervenons sur tous les corps de métier du gros œuvre et du second œuvre.</p>
+                <p>Notre engagement : un travail <strong>rigoureux</strong>, des matériaux de qualité et le respect strict des normes de construction. Nous mettons également à votre disposition notre <strong>bétonnière</strong> pour le coulage de vos bétons et dalles.</p>
+              
             </div>
             <div class="about-image reveal delay-1">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop" alt="Bâtiment moderne">
+                <img src="images/image4.jpg" alt="Chantier DAN SERVICES">
             </div>
         </div>
     </section>
@@ -77,100 +81,120 @@
     <section id="stats">
         <div class="container stats-grid">
             <div class="stat-item reveal">
-                <h3 class="counter" data-target="250">0</h3>
-                <p>Projets Livrés</p>
+                <h3 class="counter" data-target="150">0</h3>
+                <p>Chantiers Réalisés</p>
             </div>
             <div class="stat-item reveal delay-1">
-                <h3 class="counter" data-target="45">0</h3>
-                <p>Awards d'Architecture</p>
+                <h3 class="counter" data-target="5">0</h3>
+                <p>Corps de Métier</p>
             </div>
             <div class="stat-item reveal delay-2">
-                <h3 class="counter" data-target="15">0</h3>
-                <p>Pays d'Intervention</p>
+                <h3 class="counter" data-target="100">0</h3>
+                <p>% Clients Satisfaits</p>
             </div>
         </div>
     </section>
 
     <!-- SERVICES -->
     <section id="services" class="container">
-        <h2 class="section-title text-center reveal">Nos Domaines d'Excellence</h2>
+        <h2 class="section-title text-center reveal">Nos Offres de Services</h2>
         <div class="services-wrapper">
             <div class="service-box reveal">
                 <div class="service-number">01</div>
-                <h3>Génie Civil & Commercial</h3>
-                <p>Sièges sociaux ultra-modernes, complexes hôteliers et centres d'affaires conçus pour maximiser la productivité et l'esthétique.</p>
+                <h3>Maçonnerie</h3>
+                <p>Élévation de murs, fondations, dalles et tous travaux de gros œuvre réalisés avec précision et solidité.</p>
             </div>
             <div class="service-box reveal delay-1">
                 <div class="service-number">02</div>
-                <h3>Résidentiel Privé</h3>
-                <p>Villas d'architecte et résidences de très haut standing. Une attention obsessionnelle portée aux finitions et aux volumes.</p>
+                <h3>Charpenterie</h3>
+                <p>Fabrication et pose de charpentes bois et métalliques pour tous types de bâtiments.</p>
             </div>
             <div class="service-box reveal delay-2">
                 <div class="service-number">03</div>
-                <h3>Rénovation & Patrimoine</h3>
-                <p>Sublimer l'ancien par le moderne. Restructuration de bâtiments historiques avec intégration de domotique de pointe.</p>
+                <h3>Plomberie</h3>
+                <p>Installation et rénovation de réseaux d'eau, sanitaires et évacuations conformes aux normes.</p>
+            </div>
+            <div class="service-box reveal">
+                <div class="service-number">04</div>
+                <h3>Ferraillage</h3>
+                <p>Mise en place d'armatures pour béton armé, poteaux, poutres et dalles.</p>
+            </div>
+            <div class="service-box reveal delay-1">
+                <div class="service-number">05</div>
+                <h3>Coulage Bétons & Dalles</h3>
+                <p>Préparation et coulage de bétons et dalles à partir de notre propre bétonnière.</p>
+            </div>
+            <div class="service-box reveal delay-2">
+                <div class="service-number">06</div>
+                <h3>Devis & Conseil</h3>
+                <p>Étude de votre projet, conseil technique et devis détaillé sans engagement.</p>
             </div>
         </div>
     </section>
 
     <!-- RÉALISATIONS (BENTO GRID) -->
     <section id="realisations" class="container">
-        <h2 class="section-title reveal">Sélection d'Œuvres</h2>
+        <h2 class="section-title reveal">Nos Réalisations</h2>
         <div class="bento-grid">
             <div class="bento-item large reveal">
-                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop" alt="Villa Modulaire">
+                <img src="images/image1.jpeg" alt="Chantier immeuble">
                 <div class="bento-content">
-                    <h3>Villa Modulaire</h3>
-                    <p>Côte d'Azur</p>
+                    <h3>Immeuble </h3>
+                    <p>Kananga</p>
                 </div>
             </div>
             <div class="bento-item reveal delay-1">
-                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop" alt="Tour Nexus">
+                <img src="images/realisation1.jpg" alt="Travaux de ferraillage">
                 <div class="bento-content">
-                    <h3>Tour Nexus</h3>
-                    <p>Paris, La Défense</p>
+                    <!-- <h3></h3>
+                    <p>Chantier privé</p> -->
                 </div>
             </div>
             <div class="bento-item reveal delay-2">
-                <img src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=800&auto=format&fit=crop" alt="Musée d'Art">
+                <img src="images/realisation2.jpg" alt="Travaux de plomberie">
                 <div class="bento-content">
-                    <h3>Galerie Lumière</h3>
-                    <p>Genève</p>
+                    <!-- <h3>Installation plomberie</h3>
+                    <p>Résidence</p> -->
                 </div>
             </div>
             <div class="bento-item wide reveal">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" alt="Intérieur Bureau">
+                <img src="images/realisation.jpg" alt="Coulage béton">
                 <div class="bento-content">
-                    <h3>Siège Horizon</h3>
-                    <p>Espace corporate 3.0</p>
+                    <!-- <h3>Coulage béton</h3>
+                    <p>Avec notre bétonnière</p> -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT (GRILLE ÉPURÉE) -->
+    <!-- CONTACT -->
     <section id="contact" class="container">
         <div class="contact-header reveal">
-            <h2 class="section-title text-center">Prêt à bâtir l'exceptionnel ?</h2>
-            <p style="text-align: center; margin-bottom: 40px; color: #a0a0a0;">Notre équipe d'ingénieurs et d'architectes est à votre écoute pour concevoir votre futur.</p>
+            <h2 class="section-title text-center">Un projet de construction ?</h2>
+            <p class="contact-intro">Notre équipe est à votre écoute pour étudier votre projet et vous fournir un devis détaillé.</p>
         </div>
         <div class="contact-grid">
             <div class="contact-card reveal">
                 <i class="fas fa-map-marker-alt"></i>
-                <h3>Bureaux</h3>
-                <p>8 Avenue Montaigne<br>75008 Paris, France</p>
+                <h3>Nos Bureaux</h3>
+                <p>
+                    Av. LUSAMBO (FATSHI), N. 144<br>
+                    Q. MUDIBA, C. KANSHI<br>
+                    <em>(En face de l'église LABORNE SALONGO)</em>
+                </p>
             </div>
             <div class="contact-card reveal delay-1">
                 <i class="fas fa-phone"></i>
                 <h3>Appelez-nous</h3>
-                <p>Lun - Ven | 9h00 - 19h00</p>
-                <a href="tel:+33180000000" class="contact-link">+33 1 80 00 00 00</a>
+                <p>Lun - Sam | 8h00 - 18h00</p>
+                <a href="tel:+243813524582" class="contact-link">+243 813 524 582</a><br>
+                <a href="tel:+243850524840" class="contact-link">+243 850 524 840</a>
             </div>
             <div class="contact-card reveal delay-2">
                 <i class="fas fa-envelope"></i>
                 <h3>Écrivez-nous</h3>
-                <p>Réponse garantie sous 24h</p>
-                <a href="mailto:contact@elevate.fr" class="contact-link">studio@elevate.fr</a>
+                <p>Réponse rapide garantie</p>
+                <a href="mailto:contact@danservices.cd" class="contact-link">contact@danservices.cd</a>
             </div>
         </div>
     </section>
@@ -179,17 +203,17 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-brand">
-                <h2>ELEVATE<span>.</span></h2>
-                <p>Construire demain.</p>
+                <h2>DAN SERVICES<span>.</span></h2>
+                <p>Le service qui répond aux normes.</p>
             </div>
             <div class="footer-social">
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61585234511108&sk=photos_by" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 ELEVATE Construction. Tous droits réservés.</p>
+            <p>&copy; 2026 DAN SERVICES. Tous droits réservés.</p>
         </div>
     </footer>
 
