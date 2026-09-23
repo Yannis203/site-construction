@@ -88,3 +88,50 @@ const statsObserver = new IntersectionObserver((entries) => {
 if(statsSection) {
     statsObserver.observe(statsSection);
 }
+
+// --- APERÇU DES RÉALISATIONS ---
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightbox-image');
+const lightboxCaption = document.getElementById('lightbox-caption');
+const lightboxClose = document.querySelector('.lightbox-close');
+const galleryItems = document.querySelectorAll('.bento-item');
+
+const closeLightbox = () => {
+    lightbox.hidden = true;
+    document.body.style.overflow = '';
+};
+
+galleryItems.forEach(item => {
+    item.setAttribute('tabindex', '0');
+    item.setAttribute('role', 'button');
+
+    const openLightbox = () => {
+        const image = item.querySelector('img');
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+        lightboxCaption.textContent = item.dataset.gallery;
+        lightbox.hidden = false;
+        document.body.style.overflow = 'hidden';
+        lightboxClose.focus();
+    };
+
+    item.addEventListener('click', event => {
+        event.preventDefault();
+        openLightbox();
+    });
+
+    item.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openLightbox();
+        }
+    });
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', event => {
+    if (event.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !lightbox.hidden) closeLightbox();
+});

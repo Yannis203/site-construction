@@ -132,40 +132,70 @@
         </div>
     </section>
 
-    <!-- RÉALISATIONS (BENTO GRID) -->
+    <!-- RÉALISATIONS -->
     <section id="realisations" class="container">
         <h2 class="section-title reveal">Nos Réalisations</h2>
         <div class="bento-grid">
-            <div class="bento-item large reveal">
-                <img src="images/image1.jpeg" alt="Chantier immeuble">
+            <div class="bento-item large reveal" data-gallery="Chantier immeuble DGI/Kananga">
+                <img src="images/image1.jpeg" alt="Chantier d'un immeuble à DGI/Kananga">
                 <div class="bento-content">
-                    <h3>Immeuble </h3>
-                    <p>Kananga</p>
+                    <h3>Immeuble</h3>
+                    <p>DGI/Kananga</p>
                 </div>
             </div>
-            <div class="bento-item reveal delay-1">
-                <img src="images/realisation1.jpg" alt="Travaux de ferraillage">
-                <div class="bento-content">
-                    <!-- <h3></h3>
-                    <p>Chantier privé</p> -->
-                </div>
+            <div class="bento-item reveal delay-1" data-gallery="Travaux de ferraillage">
+                <img src="images/gallerie3.jpeg" alt="Travaux de ferraillage">
             </div>
-            <div class="bento-item reveal delay-2">
-                <img src="images/realisation2.jpg" alt="Travaux de plomberie">
-                <div class="bento-content">
-                    <!-- <h3>Installation plomberie</h3>
-                    <p>Résidence</p> -->
-                </div>
+            <div class="bento-item reveal delay-2" data-gallery="Travaux de plomberie">
+                <img src="images/image2.jpeg" alt="Travaux de plomberie">
             </div>
-            <div class="bento-item wide reveal">
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
                 <img src="images/realisation.jpg" alt="Coulage béton">
-                <div class="bento-content">
-                    <!-- <h3>Coulage béton</h3>
-                    <p>Avec notre bétonnière</p> -->
-                </div>
+            </div>
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
+                <img src="images/gallerie2.jpeg" alt="Coulage béton">
+            </div>
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
+                <img src="images/gallerie4.jpeg" alt="Coulage béton">
+            </div>
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
+                <img src="images/image3.jpg" alt="Coulage béton">
+            </div>
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
+                <img src="images/realisation1.jpg" alt="Coulage béton">
+            </div>
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
+                <img src="images/gallerie6.jpeg" alt="Coulage béton">
+            </div>
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
+                <img src="images/realisation2.jpg" alt="Coulage béton">
+            </div>
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
+                <img src="images/gallerie7.jpeg" alt="Coulage béton">
+            </div>
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
+                <img src="images/gallerie8.jpeg" alt="Coulage béton">
+            </div>
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
+                <img src="images/gallerie9.jpeg" alt="Coulage béton">
+            </div>
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
+                <img src="images/gallerie10.jpeg" alt="Coulage béton">
+            </div>
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
+                <img src="images/gallerie11.jpeg" alt="Coulage béton">
+            </div>
+            <div class="bento-item wide reveal" data-gallery="Coulage béton">
+                <img src="images/gallerie12.jpeg" alt="Coulage béton">
             </div>
         </div>
     </section>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu de la réalisation" hidden>
+        <button class="lightbox-close" type="button" aria-label="Fermer l'aperçu">&times;</button>
+        <img class="lightbox-image" id="lightbox-image" src="" alt="">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
 
     <!-- CONTACT -->
     <section id="contact" class="container">
@@ -173,28 +203,44 @@
             <h2 class="section-title text-center">Un projet de construction ?</h2>
             <p class="contact-intro">Notre équipe est à votre écoute pour étudier votre projet et vous fournir un devis détaillé.</p>
         </div>
-        <div class="contact-grid">
-            <div class="contact-card reveal">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Nos Bureaux</h3>
-                <p>
-                    Av. LUSAMBO (FATSHI), N. 144<br>
-                    Q. MUDIBA, C. KANSHI<br>
-                    <em>(En face de l'église LABORNE SALONGO)</em>
-                </p>
-            </div>
-            <div class="contact-card reveal delay-1">
-                <i class="fas fa-phone"></i>
-                <h3>Appelez-nous</h3>
-                <p>Lun - Sam | 8h00 - 18h00</p>
-                <a href="tel:+243813524582" class="contact-link">+243 813 524 582</a><br>
-                <a href="tel:+243850524840" class="contact-link">+243 850 524 840</a>
-            </div>
-            <div class="contact-card reveal delay-2">
+        <div class="contact-locations">
+            <article class="contact-card reveal">
+                <i class="fas fa-location-dot"></i>
+                <h3>Kananga</h3>
+                <p class="contact-address">45, Av. Tshimayi<br>Q/ Azda, C/ Kananga</p>
+                <a href="tel:+243815152828" class="contact-link">+243 81 51 52 828</a>
+                <a href="tel:+243859419200" class="contact-link">+243 85 94 19 200</a>
+            </article>
+            <article class="contact-card reveal delay-1">
+                <i class="fas fa-location-dot"></i>
+                <h3>Mbuji-Mayi</h3>
+                <p class="contact-address">43, Av. Dilunga<br>Q/ Kansele, C/ Muya<br>Ville de Mbuji-Mayi</p>
+                <a href="tel:+243815152828" class="contact-link">+243 81 51 52 828</a>
+                <a href="tel:+243815152828" class="contact-link">+243 81 51 52 828</a>
+            </article>
+            <article class="contact-card reveal delay-2">
+                <i class="fas fa-location-dot"></i>
+                <h3>Kinshasa</h3>
+                <p class="contact-address">35, Av. Kwamouth<br>Q/ Wenze, C/ Kintambo</p>
+                <a href="tel:+243815152828" class="contact-link">+243 81 51 52 828</a>
+                <a href="tel:+243859419200" class="contact-link">+243 85 94 19 200</a>
+            </article>
+        </div>
+        <div class="contact-details reveal">
+            <div class="contact-detail-group">
                 <i class="fas fa-envelope"></i>
-                <h3>Écrivez-nous</h3>
-                <p>Réponse rapide garantie</p>
-                <a href="mailto:contact@danservices.cd" class="contact-link">contact@danservices.cd</a>
+                <div>
+                    <h3>Écrivez-nous</h3>
+                    <a href="mailto:danservice2017@gmail.com" class="contact-link">danservice2017@gmail.com</a>
+                    <a href="mailto:gnsubayi@gmail.com" class="contact-link">gnsubayi@gmail.com</a>
+                </div>
+            </div>
+            <div class="company-registration">
+                <h3>Informations légales</h3>
+                <p><strong>ID.Nat :</strong> 01-G4701-N07892</p>
+                <p><strong>RCCM :</strong> 16-A32106</p>
+                <p><strong>N° d'impôt :</strong> A1607165G</p>
+                <p><strong>N° d'affiliation à la CNSS :</strong> 010306169H1</p>
             </div>
         </div>
     </section>
